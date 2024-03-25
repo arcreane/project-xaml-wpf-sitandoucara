@@ -1,0 +1,7 @@
+NOTE 1: 
+Ajouter la creation d'un compte à la fin d'avoir eu les resultat finale pour pouvoir tout sauvegarder
+NOTE 2:
+creer un mode de preparation de praparation pour creer leurs propres questions. Enregistrer en local (dans un premier temps) , et ensuite c'est à distenciel....
+Comment il faut les stocker ? En xml ? En json..
+
+******

@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-ios/iossimulator-x64/test_app.app/libSystem.Native.dylib

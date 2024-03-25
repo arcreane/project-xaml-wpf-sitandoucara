@@ -1,0 +1,17 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test_app.Views.QuizPage"
+             BackgroundColor="#F2F2F2">
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+            <Label x:Name="QuestionLabel"
+                   Text="Question"
+                   FontSize="22"
+                   TextColor="White"
+                   BackgroundColor="Black" />
+            <StackLayout x:Name="AnswerButtonsContainer"  Spacing="10">
+                <!--buttuns dynamiquemes (-> QuizPage.xaml.cs)-->
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

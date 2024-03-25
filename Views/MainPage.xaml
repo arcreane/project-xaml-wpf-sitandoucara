@@ -1,0 +1,65 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test_app.MainPage"
+             BackgroundColor="#F2F2F2">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand">
+
+            <Frame BackgroundColor="Black" Padding="10" HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="Bienvenue sur Quizz test"
+                    FontSize="32"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+            </Frame>
+
+            <Label
+                Text="Veuillez choisir l'une des options"
+                FontSize="18"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                 SemanticProperties.HeadingLevel="Level2"/>
+
+            <Button Text="Mathématique"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnMathClicked" />
+
+            <Button Text="Histoire"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnHistoryClicked" />
+
+            <Button Text="Géographie"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnGeographyClicked" />
+
+            <Button Text="Biologie"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnBiologyClicked" />
+            <Button Text="Créer votre quizz"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnCreateQuizClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
