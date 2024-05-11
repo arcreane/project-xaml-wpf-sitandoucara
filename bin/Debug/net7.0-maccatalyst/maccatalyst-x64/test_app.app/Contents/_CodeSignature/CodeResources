@@ -47,11 +47,81 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MonoBundle/BouncyCastle.Cryptography.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ghU8DmiDSg9A4gA4QlQpo+P5z02rvJGRtHbP5WGKFB0=
+			</data>
+		</dict>
+		<key>MonoBundle/Google.Protobuf.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0t+d88FK0xICuYlHa9il5B9oHZnRaqbEjymsyZakR90=
+			</data>
+		</dict>
+		<key>MonoBundle/K4os.Compression.LZ4.Streams.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			trpaty5efJbCvFmLZ8Gw91sUeYUAiTeKiMZPNkabpUg=
+			</data>
+		</dict>
+		<key>MonoBundle/K4os.Compression.LZ4.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lxiUWqc+T8aL9I6x3UcEu6rNbhwiZw21bewWGxgiaJc=
+			</data>
+		</dict>
+		<key>MonoBundle/K4os.Hash.xxHash.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Gdc/pYwfbBLGHzDqrZGIG9BvUMr0tGKwYbwbRdCld80=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			wmq5WnaVna0dmeFR5oLrIwRXcGJMwB+EIXRuIENNddU=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.EntityFrameworkCore.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R2pJhGa/+pgDIpfIut7kYkwHXM3k4XD6khzBmSgXHj8=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.EntityFrameworkCore.Relational.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GBYJSlW3hvErWU/JXuUua0vbx9AJIoT0YaEslSmhGeM=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.EntityFrameworkCore.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7P/EY24kRw8f7BP9EQciSFe2O6w+xSowwD4UeoWRJw8=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.Extensions.Caching.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tiD1Xg/wcoUkJVBDtLfs5EiB1IwSUm0d/lPffRVbKOc=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.Extensions.Caching.Memory.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xNEDLuTrpWv6Lq76qNCi/PYwN6Ev6cjFAzNQPsAKMfg=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll</key>
@@ -194,6 +264,34 @@
 			Su8sGAYgRBd8KygxAbP6HE/Q35bAR9iHduNJRMvaaN8=
 			</data>
 		</dict>
+		<key>MonoBundle/Microsoft.Win32.SystemEvents.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			56MWX7GCuiW+O0EPzkUo0jj6T/mhpVB6x+UFQtaS2qE=
+			</data>
+		</dict>
+		<key>MonoBundle/MySql.Data.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0lFIVtTu62WcfeKxUsYHQRiP3OMWk2OrT/gIFyb56dU=
+			</data>
+		</dict>
+		<key>MonoBundle/MySql.EntityFrameworkCore.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n1FknR8ESY6QHe4+WLXk1mbUjnvBle+MiU8thZPzBTs=
+			</data>
+		</dict>
+		<key>MonoBundle/Newtonsoft.Json.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IsZJ91/OW+fHzNqIgEc7Y072ns8z9dGritiSyvR9Wgc=
+			</data>
+		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -283,6 +381,13 @@
 			<key>hash2</key>
 			<data>
 			4rl9Sw/XJ2CKvGZEL2Yga9R/s3LYJ8YIZeZUu6P4DaI=
+			</data>
+		</dict>
+		<key>MonoBundle/System.Configuration.ConfigurationManager.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			usGs4hpd5W7VC+6Moi/EG8ndMyjad338A6qSw9Bd8QQ=
 			</data>
 		</dict>
 		<key>MonoBundle/System.Configuration.dll</key>
@@ -395,6 +500,13 @@
 			<key>hash2</key>
 			<data>
 			sKWoPMThnxWxBVTWdWtLHUA8szqBB4/u8NCx4HQ9IJE=
+			</data>
+		</dict>
+		<key>MonoBundle/System.Drawing.Common.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AAsJ2ZiyMVmrnn74fHywmq2MnPs2b0rmnfylCvWhZsA=
 			</data>
 		</dict>
 		<key>MonoBundle/System.Drawing.Primitives.dll</key>
@@ -528,6 +640,13 @@
 			<key>hash2</key>
 			<data>
 			Pyh5GKAJXLF8DgPw/4dv6m/q2YYnXlNM3U7FqvFX+rI=
+			</data>
+		</dict>
+		<key>MonoBundle/System.IO.Pipelines.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=
 			</data>
 		</dict>
 		<key>MonoBundle/System.IO.Pipes.AccessControl.dll</key>
@@ -1041,6 +1160,13 @@
 			qZxAk2jjDiYo78pf4TrOx5meJAsVSVXhK8nyO5hwCvQ=
 			</data>
 		</dict>
+		<key>MonoBundle/System.Security.Cryptography.ProtectedData.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gaA4XPH+0i8xU3idSuH+51cZ8j5yzVQ+26GvSJJvvyQ=
+			</data>
+		</dict>
 		<key>MonoBundle/System.Security.Cryptography.X509Certificates.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -1053,6 +1179,13 @@
 			<key>hash2</key>
 			<data>
 			F4TrQr7P3kC4h9+ofmsU10QHUkazpa8f2XjoAZfvf2M=
+			</data>
+		</dict>
+		<key>MonoBundle/System.Security.Permissions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dO87Z5YKm1af7ZrEVxV3adv+QzsPT6E8UhZ8Ika/7XE=
 			</data>
 		</dict>
 		<key>MonoBundle/System.Security.Principal.Windows.dll</key>
@@ -1129,7 +1262,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Htp5dmC7gvK6b8ZSFrzWxC0TxiVLaPL2LiLiprM7rOA=
+			YSJPOMHwQPW0xWEWs++tu50tSyrtVulzG24OawNnAeM=
 			</data>
 		</dict>
 		<key>MonoBundle/System.Text.RegularExpressions.dll</key>
@@ -1244,6 +1377,13 @@
 			GoenD9K4jT7lGlmTL+F/e4WAQmMaUn7rbrdOHB+gujg=
 			</data>
 		</dict>
+		<key>MonoBundle/System.Windows.Extensions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			q76BRvo/Y47p9aquhRgtct54B8nwoGMR7xTrTl88s7A=
+			</data>
+		</dict>
 		<key>MonoBundle/System.Windows.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -1328,6 +1468,13 @@
 			aaNfCxMNUQhHNrXi0Jta/HDZsrwm5S5x4ArZSCpKOKA=
 			</data>
 		</dict>
+		<key>MonoBundle/ZstdSharp.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u5++2S6TLSHD93u3HOUv0x49gCC+86aiDoqsytUjd5g=
+			</data>
+		</dict>
 		<key>MonoBundle/icudt.dat</key>
 		<dict>
 			<key>hash2</key>
@@ -1353,21 +1500,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SFTYu0JkCIngw8Np5uW1uvhiHN0IE7n8PvRjn73AkHY=
+			+qWjhNLgUhWIAp85KeKuY22Yf9jAOnG4i2FSurn3sZ8=
 			</data>
 		</dict>
 		<key>MonoBundle/test_app.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1fOkB99pRksUZKdVxEIY6rS66YHXo9v5kawSsnzX06g=
+			M8NmE3Axj+i++sk31jjQo08gYRdKJZE9Wf4Ae3AMxjs=
 			</data>
 		</dict>
 		<key>MonoBundle/test_app.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AGbTAY/5XThxsjX2bfWr1HKguVbpbTG8LxS+trjlFzc=
+			Qd+YE3IDTFjL0HRaumOZ0GT7dsTHcI0/9fG93g8FlEM=
 			</data>
 		</dict>
 		<key>Resources/AboutAssets.txt</key>

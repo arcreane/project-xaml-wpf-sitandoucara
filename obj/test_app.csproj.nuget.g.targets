@@ -81,12 +81,15 @@
     <Import Project="$(NuGetPackageRoot)xamarin.android.glide.disklrucache/4.13.2.2/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.DiskLruCache.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.glide.disklrucache/4.13.2.2/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.DiskLruCache.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.glide.annotations/4.13.2.2/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.Annotations.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.glide.annotations/4.13.2.2/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.Annotations.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.glide/4.13.2.2/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.glide/4.13.2.2/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.text.json/8.0.3/buildTransitive/net6.0/System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json/8.0.3/buildTransitive/net6.0/System.Text.Json.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)system.text.json/8.0.3/buildTransitive/net6.0/System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json/8.0.3/buildTransitive/net6.0/System.Text.Json.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)system.text.json/8.0.3/buildTransitive/net6.0/System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json/8.0.3/buildTransitive/net6.0/System.Text.Json.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets')" />
   </ImportGroup>
 </Project>
