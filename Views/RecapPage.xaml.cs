@@ -46,5 +46,10 @@ namespace test_app.Views
                 await DisplayAlert("Prochaine étape", "La prochaine étape de questions est en cours de développement.", "OK");
             }
         }
+
+        private async void OnBackHomeButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
     }
 }

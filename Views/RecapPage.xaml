@@ -9,6 +9,7 @@
             Padding="20"
             VerticalOptions="Center"
             HorizontalOptions="FillAndExpand">
+            
             <Label
                 Text="Récapitulatif"
                 FontSize="32"
@@ -25,12 +26,35 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
 
-            <Button Text="Étape suivante"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    CornerRadius="20"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnNextStageClicked" />
+            <!-- Buttons Container -->
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="Auto"
+                  Padding="0,20,0,0"
+                  HorizontalOptions="FillAndExpand">
+                
+                <Button Text="Back Home"
+                        BackgroundColor="Transparent"
+                        TextColor="Black"
+                        BorderColor="Black"
+                        BorderWidth="1"
+                        CornerRadius="15"
+                        WidthRequest="180"
+                        HeightRequest="50"
+                        Clicked="OnBackHomeButtonClicked"
+                        HorizontalOptions="Start"
+                        Grid.Column="0" />
+
+                <Button Text="Next"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        CornerRadius="15"
+                        WidthRequest="180"
+                        HeightRequest="50"
+                        Clicked="OnNextStageClicked"
+                        HorizontalOptions="End"
+                        Grid.Column="1" />
+            </Grid>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -19,15 +19,18 @@ namespace test_app
             InitializeComponent();
         }
 
-        private async void OnCategoryClicked(object sender, EventArgs e)
+        private async void OnCategoryTapped(object sender, EventArgs e)
         {
-            var button = (Button)sender;
-            var category = button.Text;
-            var quizPage = new QuizPage(category);
-            await Navigation.PushAsync(quizPage);
+            var label = (Label)sender;
+            var category = label.GestureRecognizers.OfType<TapGestureRecognizer>().FirstOrDefault()?.CommandParameter.ToString();
+            if (!string.IsNullOrEmpty(category) && _categories.ContainsKey(category))
+            {
+                var quizPage = new QuizPage(category);
+                await Navigation.PushAsync(quizPage);
+            }
         }
 
-        private async void OnCreateQuizClicked(object sender, EventArgs e)
+        private async void OnCreateQuizTapped(object sender, EventArgs e)
         {
             await DisplayAlert("Création de quiz", "Création de question.", "OK");
         }

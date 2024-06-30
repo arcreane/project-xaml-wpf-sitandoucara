@@ -81,7 +81,8 @@ namespace test_app.Views
             if (questions.Any() && currentQuestionIndex < questions.Count)
             {
                 var question = questions[currentQuestionIndex];
-                QuestionLabel.Text = $"Question {currentQuestionIndex + 1}/{questions.Count}: {question.Text}";
+                QuestionLabel.Text = question.Text;
+                QuestionProgressLabel.Text = $"Question {currentQuestionIndex + 1}/{questions.Count}";
                 SetAnswers(question.Choices);
             }
             else
@@ -95,21 +96,39 @@ namespace test_app.Views
             AnswerButtonsContainer.Children.Clear();
             foreach (var answer in answers)
             {
-                var button = new Button
+                var frame = new Frame
                 {
-                    Text = answer,
-                    BackgroundColor = Colors.Black,
-                    TextColor = Colors.White
+                    BorderColor = Color.FromArgb("#204F54"),
+                    CornerRadius = 16,
+                    Padding = new Thickness(10),
+                    HasShadow = false,
+                    WidthRequest = this.Width - 60, // Taking padding into account
+                    HeightRequest = 60,
+                    Content = new Label
+                    {
+                        Text = answer,
+                        TextColor = Color.FromArgb("#204F54"),
+                        HorizontalOptions = LayoutOptions.Center,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalTextAlignment = TextAlignment.Center,
+                        VerticalTextAlignment = TextAlignment.Center,
+                        FontSize = 18,
+                        FontAttributes = FontAttributes.Bold
+                    }
                 };
-                button.Clicked += OnAnswerClicked;
-                AnswerButtonsContainer.Children.Add(button);
+
+                var tapGesture = new TapGestureRecognizer();
+                tapGesture.Tapped += OnAnswerTapped;
+                frame.GestureRecognizers.Add(tapGesture);
+                AnswerButtonsContainer.Children.Add(frame);
             }
         }
 
-        private async void OnAnswerClicked(object sender, EventArgs e)
+        private async void OnAnswerTapped(object sender, EventArgs e)
         {
-            var button = (Button)sender;
-            var answer = button.Text;
+            var frame = (Frame)sender;
+            var label = (Label)frame.Content;
+            var answer = label.Text;
             var question = questions[currentQuestionIndex];
             var correctAnswer = question.CorrectAnswer;
             bool isCorrect = question.CheckAnswer(answer);
@@ -137,6 +156,16 @@ namespace test_app.Views
         private async void NavigateToRecapPage()
         {
             await Navigation.PushAsync(new RecapPage(answerResults, score, category, null));
+        }
+
+        private async void OnBackButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
+
+        private async void OnBackHomeButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
         }
     }
 }

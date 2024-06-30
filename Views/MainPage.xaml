@@ -1,7 +1,7 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="test_app.MainPage"
-             BackgroundColor="#E1F396"
+             BackgroundColor="#F9F9F9"
              Padding="20"
              Title="">
 
@@ -42,60 +42,101 @@
               HorizontalOptions="CenterAndExpand"
               VerticalOptions="StartAndExpand">
 
-            <Button Text="Mathématique"
-                    BackgroundColor="#F5F5DC"
-                    TextColor="#015055"
-                    CornerRadius="16"
-                    WidthRequest="180"
-                    HeightRequest="180"
-                    FontAttributes="Bold"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Clicked="OnCategoryClicked" />
+            <Frame BorderColor="#204F54"
+                   CornerRadius="16"
+                   WidthRequest="180"
+                   HeightRequest="180"
+                   Padding="0"
+                   HasShadow="False"
+                   Grid.Row="0"
+                   Grid.Column="0">
+                <Label Text="Mathématique"
+                       TextColor="#015055"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCategoryTapped" CommandParameter="Mathématique" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
 
-            <Button Text="Histoire"
-                    BackgroundColor="#F5F5DC"
-                    TextColor="#015055"
-                    CornerRadius="16"
-                    WidthRequest="180"
-                    HeightRequest="180"
-                    FontAttributes="Bold"
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    Clicked="OnCategoryClicked" />
+            <Frame BorderColor="#204F54"
+                   CornerRadius="16"
+                   WidthRequest="180"
+                   HeightRequest="180"
+                   Padding="0"
+                   HasShadow="False"
+                   Grid.Row="0"
+                   Grid.Column="1">
+                <Label Text="Histoire"
+                       TextColor="#015055"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCategoryTapped" CommandParameter="Histoire" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
 
-            <Button Text="Géographie"
-                    BackgroundColor="#F5F5DC"
-                    TextColor="#015055"
-                    CornerRadius="16"
-                    WidthRequest="180"
-                    HeightRequest="180"
-                    FontAttributes="Bold"
-                    Grid.Row="1"
-                    Grid.Column="0"
-                    Clicked="OnCategoryClicked" />
+            <Frame BorderColor="#204F54"
+                   CornerRadius="16"
+                   WidthRequest="180"
+                   HeightRequest="180"
+                   Padding="0"
+                   HasShadow="False"
+                   Grid.Row="1"
+                   Grid.Column="0">
+                <Label Text="Géographie"
+                       TextColor="#015055"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCategoryTapped" CommandParameter="Géographie" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
 
-            <Button Text="Biologie"
-                    BackgroundColor="#F5F5DC"
-                    TextColor="#015055"
-                    CornerRadius="16"
-                    WidthRequest="180"
-                    HeightRequest="180"
-                    FontAttributes="Bold"
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    Clicked="OnCategoryClicked" />
+            <Frame BorderColor="#204F54"
+                   CornerRadius="16"
+                   WidthRequest="180"
+                   HeightRequest="180"
+                   Padding="0"
+                   HasShadow="False"
+                   Grid.Row="1"
+                   Grid.Column="1">
+                <Label Text="Biologie"
+                       TextColor="#015055"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCategoryTapped" CommandParameter="Biologie" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
 
-            <Button Text="Création de quiz"
-                    BackgroundColor="#F5F5DC"
-                    TextColor="#015055"
-                    CornerRadius="16"
-                    WidthRequest="180"
-                    HeightRequest="180"
-                    FontAttributes="Bold"
-                    Grid.Row="2"
-                    Grid.Column="0"
-                    Clicked="OnCreateQuizClicked" />
+            <Frame BorderColor="#204F54"
+                   CornerRadius="16"
+                   WidthRequest="180"
+                   HeightRequest="180"
+                   Padding="0"
+                   HasShadow="False"
+                   Grid.Row="2"
+                   Grid.Column="0">
+                <Label Text="Création de quiz"
+                       TextColor="#015055"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCreateQuizTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+
         </Grid>
 
     </VerticalStackLayout>
