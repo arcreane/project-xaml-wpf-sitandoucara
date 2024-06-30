@@ -1,45 +1,45 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="test_app.Views.TrueFalsePage"
-             BackgroundColor="#F2F2F2"
-             Title="">
-
-    <VerticalStackLayout Spacing="25" Padding="30" HorizontalOptions="FillAndExpand">
-        
-        <!-- Quiz Type and Question Progress -->
-        <Label Text="True or False"
-               FontSize="32"
-               FontAttributes="Bold"
-               TextColor="Black"
-               HorizontalOptions="Center" />
-        <Label x:Name="QuestionProgressLabel"
-               FontSize="18"
-               FontAttributes="Bold"
-               TextColor="#204F54"
-               HorizontalOptions="Center"
-               Padding="0,0,0,10" />
-
-        <!-- Question Text -->
-        <Label x:Name="QuestionLabel"
-               FontSize="22"
-               TextColor="#204F54"
-               HorizontalOptions="Start"
-               VerticalOptions="Start" />
-
-        <!-- Answer Buttons Container -->
-        <StackLayout x:Name="AnswerButtonsContainer" Spacing="10">
-        </StackLayout>
-
-        <!-- Back Home Button -->
-        <Button Text="Back Home"
-                BackgroundColor="Transparent"
+<views:BaseQuizPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:views="clr-namespace:test_app.Views"
+                    x:Class="test_app.Views.TrueFalsePage"
+                    BackgroundColor="#F2F2F2">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand">
+            <Label
+                Text="Vrai ou Faux"
+                FontSize="32"
+                FontAttributes="Bold"
                 TextColor="Black"
-                BorderColor="Black"
-                BorderWidth="1"
-                CornerRadius="15"
-                WidthRequest="200"
-                HeightRequest="50"
-                Clicked="OnBackHomeButtonClicked"
-                HorizontalOptions="Start" />
-    </VerticalStackLayout>
-</ContentPage>
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Label x:Name="QuestionProgressLabel"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   TextColor="#204F54"
+                   HorizontalOptions="Center"
+                   Padding="0,0,0,10" />
+            <Label x:Name="QuestionLabel"
+                   Text="Question"
+                   FontSize="22"
+                   TextColor="#204F54"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start" />
+            <StackLayout x:Name="AnswerButtonsContainer" Spacing="10">
+            </StackLayout>
+            <Button Text="Accueil"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    CornerRadius="15"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Clicked="OnBackHomeButtonClicked"
+                    HorizontalOptions="Start" />
+        </VerticalStackLayout>
+    </ScrollView>
+</views:BaseQuizPage>

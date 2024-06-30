@@ -288,3 +288,8 @@
 /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-ios/iossimulator-x64/System.Security.Permissions.dll
 /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-ios/iossimulator-x64/System.Windows.Extensions.dll
 /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-ios/iossimulator-x64/ZstdSharp.dll
+/Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/obj/Debug/net7.0-ios/iossimulator-x64/resizetizer/f/SpaceGrotesk-Bold.ttf
+/Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/obj/Debug/net7.0-ios/iossimulator-x64/resizetizer/f/SpaceGrotesk-Light.ttf
+/Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/obj/Debug/net7.0-ios/iossimulator-x64/resizetizer/f/SpaceGrotesk-Medium.ttf
+/Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/obj/Debug/net7.0-ios/iossimulator-x64/resizetizer/f/SpaceGrotesk-Regular.ttf
+/Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/obj/Debug/net7.0-ios/iossimulator-x64/resizetizer/f/SpaceGrotesk-SemiBold.ttf

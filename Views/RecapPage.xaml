@@ -32,7 +32,7 @@
                   Padding="0,20,0,0"
                   HorizontalOptions="FillAndExpand">
                 
-                <Button Text="Back Home"
+                <Button Text="Accueil"
                         BackgroundColor="Transparent"
                         TextColor="Black"
                         BorderColor="Black"
@@ -44,7 +44,7 @@
                         HorizontalOptions="Start"
                         Grid.Column="0" />
 
-                <Button Text="Next"
+                <Button Text="Suivant"
                         BackgroundColor="Black"
                         TextColor="White"
                         CornerRadius="15"

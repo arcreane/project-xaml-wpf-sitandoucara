@@ -11,8 +11,9 @@ public static class MauiProgram
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+				fonts.AddFont("SpaceGrotesk-Regular.ttf", "SpaceGrotesk");
+				fonts.AddFont("SpaceGrotesk-SemiBold.ttf", "SpaceGroteskSemibold");
+				fonts.AddFont("SpaceGrotesk-Bold.ttf", "SpaceGroteskBold");
 			});
 
 #if DEBUG

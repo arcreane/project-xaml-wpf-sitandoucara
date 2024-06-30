@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/MauiInfo.plist</key>
 		<data>
-		iEtuUGCV6JM3gxS/pO33swhmpp8=
+		P4tl2uDYY1SSbH1GDGa63Wgt4LU=
 		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -27,6 +27,26 @@
 		<key>Resources/OpenSans-Semibold.ttf</key>
 		<data>
 		iuIlP5RitX7eqyYnMfGIMnFMn/g=
+		</data>
+		<key>Resources/SpaceGrotesk-Bold.ttf</key>
+		<data>
+		sqoU+oN88+1eZHyHkG6II42IxUg=
+		</data>
+		<key>Resources/SpaceGrotesk-Light.ttf</key>
+		<data>
+		N6ff/B1YD5T5IEuKkPbGC+2fUA4=
+		</data>
+		<key>Resources/SpaceGrotesk-Medium.ttf</key>
+		<data>
+		U6gtxCFJ61dejjjc0MYYiZ5+i48=
+		</data>
+		<key>Resources/SpaceGrotesk-Regular.ttf</key>
+		<data>
+		0WZuNgXXE4AmUKsmwJFCOMoSQnQ=
+		</data>
+		<key>Resources/SpaceGrotesk-SemiBold.ttf</key>
+		<data>
+		D17Iw4XEK2XNi8tJTybpwoLWoQc=
 		</data>
 		<key>Resources/appicon.icns</key>
 		<data>
@@ -1528,14 +1548,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			82V1gwnlW8fqPqITm3L/3lzA7RoRFcCynjAxoDge2AI=
+			KM1vmz7qt7XFgkehN1epK/9f6wSp7VPOVXohbTNwx4E=
 			</data>
 		</dict>
 		<key>MonoBundle/test_app.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			62jJmh9froXqiiUXpKhfvuFeVdIun+ZyFKok4wYo15w=
+			dpH6Bog2qd2Qqkg2NELRqiBb7U15R6HclYoinZ9Cc7E=
 			</data>
 		</dict>
 		<key>Resources/AboutAssets.txt</key>
@@ -1556,7 +1576,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
+			dHUzQwULhdgsMUfJSzaGux0pHVJ8+FMFtZctOIsoriY=
 			</data>
 		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
@@ -1578,6 +1598,41 @@
 			<key>hash2</key>
 			<data>
 			Dei5msrhHM0ckeNafVKkir+rMTFZWbRyoM+v4teOidU=
+			</data>
+		</dict>
+		<key>Resources/SpaceGrotesk-Bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pcEyj9ETN3lowGz7gbYjJ6ikbEVXPlS4hNcGzqF4iHo=
+			</data>
+		</dict>
+		<key>Resources/SpaceGrotesk-Light.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wa4xYkRk1kTS/xCxOSm/6SlJzfXgnm3UEQET24cIYkg=
+			</data>
+		</dict>
+		<key>Resources/SpaceGrotesk-Medium.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5YpFONlPH/jH3CpezaRhyIkGGDZjLfRvIN/idTq0ddk=
+			</data>
+		</dict>
+		<key>Resources/SpaceGrotesk-Regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tbjDh1bf4flLQsbKEqsBMIB5Wu0qrj+fHuOSOe+Nn7U=
+			</data>
+		</dict>
+		<key>Resources/SpaceGrotesk-SemiBold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8fysDsBUEAo0hHDAVJpc+SbI2tZtCkm36v5jRDZMXHc=
 			</data>
 		</dict>
 		<key>Resources/appicon.icns</key>

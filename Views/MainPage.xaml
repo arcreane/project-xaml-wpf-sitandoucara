@@ -8,7 +8,7 @@
     <VerticalStackLayout Spacing="25" HorizontalOptions="Start">
 
         <!-- Header Title -->
-        <Label Text="Hi You!"
+        <Label Text="Salut Toi!"
                FontSize="40"
                FontAttributes="Bold"
                TextColor="#000000"
@@ -16,18 +16,13 @@
 
         <!-- Main Title -->
         <VerticalStackLayout Spacing="0">
-            <Label Text="What Subject do"
-                   FontSize="24"
+            <Label Text="Quel matière veux-tu"
+                   FontSize="28"
                    FontAttributes="Bold"
                    TextColor="#015055"
                    HorizontalOptions="Start" />
-            <Label Text="you want to improve"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   TextColor="#015055"
-                   HorizontalOptions="Start" />
-            <Label Text="today?"
-                   FontSize="24"
+            <Label Text="améliorer aujourd'hui ?"
+                   FontSize="28"
                    FontAttributes="Bold"
                    TextColor="#015055"
                    HorizontalOptions="Start" />
