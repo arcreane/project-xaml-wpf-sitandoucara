@@ -1,0 +1,36 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test_app.Views.RecapPage"
+             BackgroundColor="#F2F2F2">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="15"
+            Padding="20"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand">
+            <Label
+                Text="Récapitulatif"
+                FontSize="32"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+            <StackLayout x:Name="RecapContainer" />
+
+            <Label x:Name="ScoreLabel"
+                   Text="Score: 0/5"
+                   FontSize="24"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+
+            <Button Text="Étape suivante"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnNextStageClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

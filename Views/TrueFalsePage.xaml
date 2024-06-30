@@ -1,0 +1,27 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test_app.Views.TrueFalsePage"
+             BackgroundColor="#F2F2F2">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand">
+            <Label
+                Text="True or False Questions"
+                FontSize="32"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Label x:Name="QuestionLabel"
+                   Text="Question"
+                   FontSize="22"
+                   TextColor="White"
+                   BackgroundColor="Black" />
+            <StackLayout x:Name="AnswerButtonsContainer" Spacing="10">
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

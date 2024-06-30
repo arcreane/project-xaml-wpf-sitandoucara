@@ -1,10 +1,11 @@
+//classe abstraite-heritages
 namespace test_app.Models
 {
     public abstract class Question
     {
-        public string Text { get; set; }
-        public string[] Choices { get; set; }
-        public string CorrectAnswer { get; set; }
+        public string Text { get; }
+        public string[] Choices { get; }
+        public string CorrectAnswer { get; }
 
         protected Question(string text, string[] choices, string correctAnswer)
         {
@@ -14,5 +15,10 @@ namespace test_app.Models
         }
 
         public abstract bool CheckAnswer(string answer);
+
+        public virtual string GetRecap()
+        {
+            return $"{Text}\nCorrect Answer: {CorrectAnswer}";
+        }
     }
 }

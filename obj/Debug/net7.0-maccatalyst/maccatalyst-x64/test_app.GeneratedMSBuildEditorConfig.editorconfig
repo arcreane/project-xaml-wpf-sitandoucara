@@ -45,3 +45,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = test_app.Views.QuizPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/QuizPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/QuizPage.xaml
+
+[/Users/sitan/Desktop/integration_maquette/dev2/c\#/test_app/Views/RecapPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = test_app.Views.RecapPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/RecapPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/RecapPage.xaml
+
+[/Users/sitan/Desktop/integration_maquette/dev2/c\#/test_app/Views/TrueFalsePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = test_app.Views.TrueFalsePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TrueFalsePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TrueFalsePage.xaml

@@ -1,65 +1,102 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="test_app.MainPage"
-             BackgroundColor="#F2F2F2">
+             BackgroundColor="#E1F396"
+             Padding="20"
+             Title="">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30"
-            VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand">
+    <VerticalStackLayout Spacing="25" HorizontalOptions="Start">
 
-            <Frame BackgroundColor="Black" Padding="10" HorizontalOptions="FillAndExpand">
-                <Label
-                    Text="Bienvenue sur Quizz test"
-                    FontSize="32"
-                    TextColor="White"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center" />
-            </Frame>
+        <!-- Header Title -->
+        <Label Text="Hi You!"
+               FontSize="40"
+               FontAttributes="Bold"
+               TextColor="#000000"
+               HorizontalOptions="Start" />
 
-            <Label
-                Text="Veuillez choisir l'une des options"
-                FontSize="18"
-                TextColor="Black"
-                HorizontalOptions="Center"
-                VerticalOptions="Center" 
-                 SemanticProperties.HeadingLevel="Level2"/>
+        <!-- Main Title -->
+        <VerticalStackLayout Spacing="0">
+            <Label Text="What Subject do"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#015055"
+                   HorizontalOptions="Start" />
+            <Label Text="you want to improve"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#015055"
+                   HorizontalOptions="Start" />
+            <Label Text="today?"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#015055"
+                   HorizontalOptions="Start" />
+        </VerticalStackLayout>
+
+        <!-- Subjects Grid -->
+        <Grid ColumnDefinitions="*,*"
+              RowDefinitions="Auto,Auto,Auto"
+              Padding="10"
+              ColumnSpacing="20"
+              RowSpacing="20"
+              HorizontalOptions="CenterAndExpand"
+              VerticalOptions="StartAndExpand">
 
             <Button Text="Mathématique"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    CornerRadius="20"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnMathClicked" />
+                    BackgroundColor="#F5F5DC"
+                    TextColor="#015055"
+                    CornerRadius="16"
+                    WidthRequest="180"
+                    HeightRequest="180"
+                    FontAttributes="Bold"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Clicked="OnCategoryClicked" />
 
             <Button Text="Histoire"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    CornerRadius="20"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnHistoryClicked" />
+                    BackgroundColor="#F5F5DC"
+                    TextColor="#015055"
+                    CornerRadius="16"
+                    WidthRequest="180"
+                    HeightRequest="180"
+                    FontAttributes="Bold"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Clicked="OnCategoryClicked" />
 
             <Button Text="Géographie"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    CornerRadius="20"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnGeographyClicked" />
+                    BackgroundColor="#F5F5DC"
+                    TextColor="#015055"
+                    CornerRadius="16"
+                    WidthRequest="180"
+                    HeightRequest="180"
+                    FontAttributes="Bold"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Clicked="OnCategoryClicked" />
 
             <Button Text="Biologie"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    CornerRadius="20"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnBiologyClicked" />
-            <Button Text="Créer votre quizz"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    CornerRadius="20"
-                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#F5F5DC"
+                    TextColor="#015055"
+                    CornerRadius="16"
+                    WidthRequest="180"
+                    HeightRequest="180"
+                    FontAttributes="Bold"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Clicked="OnCategoryClicked" />
+
+            <Button Text="Création de quiz"
+                    BackgroundColor="#F5F5DC"
+                    TextColor="#015055"
+                    CornerRadius="16"
+                    WidthRequest="180"
+                    HeightRequest="180"
+                    FontAttributes="Bold"
+                    Grid.Row="2"
+                    Grid.Column="0"
                     Clicked="OnCreateQuizClicked" />
-        </VerticalStackLayout>
-    </ScrollView>
+        </Grid>
+
+    </VerticalStackLayout>
 </ContentPage>

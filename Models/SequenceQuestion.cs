@@ -11,5 +11,10 @@ namespace test_app.Models
             //logique pour vérifier l'ordre des éléments
             return answer == CorrectAnswer;
         }
+
+        public override string GetRecap()
+        {
+            return base.GetRecap() + $"\nYour sequence was: {string.Join(" -> ", Choices)}";
+        }
     }
 }

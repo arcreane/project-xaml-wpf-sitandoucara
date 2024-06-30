@@ -5,3 +5,25 @@ creer un mode de preparation de praparation pour creer leurs propres questions. 
 Comment il faut les stocker ? En xml ? En json..
 
 ******
+-Une methode pour toutes les matieres , pàrenddre l'ino du text et la generer en fonction de ca , et du coup une fonction par bouton (enum)*/
+-Ajout d'un userdata afin ( variable, contestdata), mettre ce que je veux dedans et donc dans mon bouton, je recupere aussi la categoris et comme ca je ol'affiche et ne pas avoir des multiple switch
+-check fermutre ... database..;
+-Avoir une page pour gerer le recap...( en passant par le switch des reponses, implementation des disply des reponses varies en fonction des reponses .
+-Avoir une classe de base qui va venir gerer les vlasses et l'affichages final avec les reponses et renu final...
+*********$$$$$***
+1-Avoir une grande classe abstraite ( questions) qui va conenir mon display, mon get recap genre tout ce qui est commum...
+2-J'aurai ma page xaml qui va venir prendre les infos de ma page afin de les afficher...
+3-Avoir des mini classes differentes, qcm, sequence etc...
+4-avoir une grande page/classe qui va venir donner ces infos afin de faire des mini tests, recapqcm , recap sequence etc...
+
+
+   private async void OnSubClicked(object sender, EventArgs e)
+        {
+        Button b = (Button)sender;
+
+            var quizPage = new QuizPage(b.Text);
+            await Navigation.PushAsync(quizPage);
+        }
+        
+
+**dotnet build -t:Run -f net7.0-ios /p:_DeviceName=:v2:udid=2F27FF30-0279-4CCB-B400-01112C463EC3

@@ -3,14 +3,25 @@
              x:Class="test_app.Views.QuizPage"
              BackgroundColor="#F2F2F2">
     <ScrollView>
-        <VerticalStackLayout Spacing="25" Padding="30">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand">
+            <Label
+                Text="Multiple Choice Questions"
+                FontSize="32"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
             <Label x:Name="QuestionLabel"
                    Text="Question"
                    FontSize="22"
                    TextColor="White"
-                   BackgroundColor="Black" />
-            <StackLayout x:Name="AnswerButtonsContainer"  Spacing="10">
-                <!--buttuns dynamiquemes (-> QuizPage.xaml.cs)-->
+                   BackgroundColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <StackLayout x:Name="AnswerButtonsContainer" Spacing="10">
             </StackLayout>
         </VerticalStackLayout>
     </ScrollView>

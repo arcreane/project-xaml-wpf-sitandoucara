@@ -11,5 +11,10 @@ namespace test_app.Models
             //logique pour vérifier les associations
             return answer == CorrectAnswer;
         }
+
+        public override string GetRecap()
+        {
+            return base.GetRecap() + $"\nYour matches were: {string.Join(", ", Choices)}";
+        }
     }
 }

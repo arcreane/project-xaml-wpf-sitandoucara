@@ -7,8 +7,12 @@ namespace test_app.Models
 
         public override bool CheckAnswer(string answer)
         {
-        //logique
             return answer == CorrectAnswer;
+        }
+
+        public override string GetRecap()
+        {
+            return base.GetRecap() + $"\nYour choices were: {string.Join(", ", Choices)}";
         }
     }
 }

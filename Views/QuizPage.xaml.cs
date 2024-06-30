@@ -1,4 +1,3 @@
-//Gestion de la question de tupe choix multiple
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -14,10 +13,23 @@ namespace test_app.Views
     public partial class QuizPage : ContentPage
     {
         private ObservableCollection<Question> questions = new ObservableCollection<Question>();
+        private ObservableCollection<AnswerResult> answerResults = new ObservableCollection<AnswerResult>();
+        private int currentQuestionIndex = 0;
+        private int score = 0;
+        private string category;
+
+        private readonly Dictionary<string, string> _categoryToTableMap = new Dictionary<string, string>
+        {
+            { "Mathématique", "Math" },
+            { "Histoire", "History" },
+            { "Géographie", "Geography" },
+            { "Biologie", "Biology" }
+        };
 
         public QuizPage(string category)
         {
             InitializeComponent();
+            this.category = category;
             LoadQuestions(category);
         }
 
@@ -28,8 +40,8 @@ namespace test_app.Views
                 using (var conn = DatabaseConfig.GetConnection())
                 {
                     await conn.OpenAsync();
-                    string tableName = GetTableName(category);  // Determine la bonne table 
-                    var query = $"SELECT * FROM {tableName} WHERE category = @category";
+                    var tableName = GetTableName(category);
+                    var query = $"SELECT * FROM {tableName} WHERE category = @category AND type = 'MC' LIMIT 5";
                     using (var cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@category", category);
@@ -37,7 +49,7 @@ namespace test_app.Views
                         {
                             if (!reader.HasRows)
                             {
-                                QuestionLabel.Text = "Tableau vide";
+                                QuestionLabel.Text = "Aucune question disponible";
                                 return;
                             }
                             while (await reader.ReadAsync())
@@ -45,12 +57,12 @@ namespace test_app.Views
                                 var text = reader["text"].ToString();
                                 var choices = JsonConvert.DeserializeObject<string[]>(reader["choices"].ToString());
                                 var correctAnswer = reader["correct_answer"].ToString();
-                                questions.Add(new MultipleChoiceQuestion(text, choices, correctAnswer)); //Affirmer la natire Multiple des questions
+                                questions.Add(new MultipleChoiceQuestion(text, choices, correctAnswer));
                             }
                         }
                     }
                 }
-                DisplayFirstQuestion();
+                DisplayQuestion();
             }
             catch (Exception ex)
             {
@@ -59,31 +71,22 @@ namespace test_app.Views
             }
         }
 
-//gestions des categories (questions)
-        private string GetTableName(string category) 
+        private string GetTableName(string category)
         {
-        switch (category)
-            {
-            case "Histoire":
-                return "History";
-            case "Mathématique":
-                return "Math";
-            case "Géographie":
-                return "geography"; 
-            case "Biologie":
-                return "Biology"; 
-            default:
-                return "General";
-            }
+            return _categoryToTableMap.ContainsKey(category) ? _categoryToTableMap[category] : "General";
         }
-        
-        private void DisplayFirstQuestion()
+
+        private void DisplayQuestion()
         {
-            if (questions.Any())
+            if (questions.Any() && currentQuestionIndex < questions.Count)
             {
-                var firstQuestion = questions.First();
-                QuestionLabel.Text = firstQuestion.Text;
-                SetAnswers(firstQuestion.Choices);
+                var question = questions[currentQuestionIndex];
+                QuestionLabel.Text = $"Question {currentQuestionIndex + 1}/{questions.Count}: {question.Text}";
+                SetAnswers(question.Choices);
+            }
+            else
+            {
+                NavigateToRecapPage();
             }
         }
 
@@ -96,7 +99,9 @@ namespace test_app.Views
                 {
                     Text = answer,
                     BackgroundColor = Colors.Black,
-                    TextColor = Colors.White
+                    TextColor = Colors.White,
+                    HorizontalOptions = LayoutOptions.FillAndExpand,
+                    VerticalOptions = LayoutOptions.Center
                 };
                 button.Clicked += OnAnswerClicked;
                 AnswerButtonsContainer.Children.Add(button);
@@ -107,15 +112,33 @@ namespace test_app.Views
         {
             var button = (Button)sender;
             var answer = button.Text;
-            var correctAnswer = questions.First().CorrectAnswer;  
-            if (answer == correctAnswer)
+            var question = questions[currentQuestionIndex];
+            var correctAnswer = question.CorrectAnswer;
+            bool isCorrect = question.CheckAnswer(answer);
+
+            answerResults.Add(new AnswerResult
+            {
+                Question = question,
+                UserAnswer = answer,
+                IsCorrect = isCorrect
+            });
+
+            if (isCorrect)
             {
                 await DisplayAlert("Réponse", "Correct", "OK");
+                score++;
             }
             else
             {
                 await DisplayAlert("Réponse", "Incorrect", "OK");
             }
+            currentQuestionIndex++;
+            DisplayQuestion();
+        }
+
+        private async void NavigateToRecapPage()
+        {
+            await Navigation.PushAsync(new RecapPage(answerResults, score, category, typeof(TrueFalsePage)));
         }
     }
 }

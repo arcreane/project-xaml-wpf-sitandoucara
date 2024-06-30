@@ -32,6 +32,9 @@
 /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../test_app.app/Contents/MonoBundle/System.Text.Json.dll
 /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../test_app.app/Contents/MonoBundle/System.Windows.Extensions.dll
 /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../test_app.app/Contents/MonoBundle/ZstdSharp.dll
+/Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../test_app.app/Contents/MonoBundle/Microsoft.Maui.Controls.HotReload.Forms.dll
+/Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../test_app.app/Contents/MonoBundle/Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+/Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../test_app.app/Contents/MonoBundle/Microsoft.VisualStudio.DesignTools.TapContract.dll
 /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../test_app.app/Contents/MonoBundle/test_app.dll
 /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../test_app.app/Contents/MonoBundle/Microsoft.CSharp.dll
 /Users/sitan/Desktop/integration_maquette/dev2/c#/test_app/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../test_app.app/Contents/MonoBundle/Microsoft.VisualBasic.Core.dll

@@ -1,3 +1,4 @@
+//texte and little more
 namespace test_app.Models
 {
     public class ShortAnswerQuestion : Question
@@ -8,6 +9,11 @@ namespace test_app.Models
         public override bool CheckAnswer(string answer)
         {
             return answer.Trim().Equals(CorrectAnswer, StringComparison.OrdinalIgnoreCase);
+        }
+
+        public override string GetRecap()
+        {
+            return base.GetRecap();
         }
     }
 }
