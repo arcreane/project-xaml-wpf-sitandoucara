@@ -1,10 +1,7 @@
-using Microsoft.Maui.Controls;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
-using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Linq;
 using test_app.Data;
 using test_app.Models;
 
@@ -17,7 +14,8 @@ namespace test_app.Views
         protected int currentQuestionIndex = 0;
         protected int score = 0;
         protected string category;
-
+        
+        // Dictionnaire pour mapper les catégories aux tables correspondantes
         private readonly Dictionary<string, string> _categoryToTableMap = new Dictionary<string, string>
         {
             { "Mathématique", "Math" },

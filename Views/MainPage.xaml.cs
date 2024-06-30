@@ -1,6 +1,4 @@
 ﻿using test_app.Views;
-using Microsoft.Maui.Controls;
-using System.Collections.Generic;
 
 namespace test_app
 {

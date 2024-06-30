@@ -1,4 +1,3 @@
-using Microsoft.Maui.Controls;
 using test_app.Models;
 
 namespace test_app.Views

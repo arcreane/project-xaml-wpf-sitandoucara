@@ -1,5 +1,3 @@
-using Microsoft.Maui.Controls;
-using System;
 using System.Collections.ObjectModel;
 using test_app.Models;
 

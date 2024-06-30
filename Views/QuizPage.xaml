@@ -6,7 +6,6 @@
 
     <VerticalStackLayout Spacing="25" Padding="30" HorizontalOptions="FillAndExpand">
         
-        <!-- Quiz Type and Question Progress -->
         <Label Text="Choix Multiple"
                FontSize="32"
                FontAttributes="Bold"
@@ -19,18 +18,15 @@
                HorizontalOptions="Center"
                Padding="0,0,0,10" />
 
-        <!-- Question Text -->
         <Label x:Name="QuestionLabel"
                FontSize="22"
                TextColor="#204F54"
                HorizontalOptions="Start"
                VerticalOptions="Start" />
 
-        <!-- Answer Buttons Container -->
         <StackLayout x:Name="AnswerButtonsContainer" Spacing="10">
         </StackLayout>
 
-        <!-- Back Home Button -->
          <Button Text="Accueil"
                     BackgroundColor="Transparent"
                     TextColor="Black"

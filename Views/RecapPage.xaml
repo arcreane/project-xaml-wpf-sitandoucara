@@ -26,7 +26,6 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
 
-            <!-- Buttons Container -->
             <Grid ColumnDefinitions="*,*"
                   RowDefinitions="Auto"
                   Padding="0,20,0,0"

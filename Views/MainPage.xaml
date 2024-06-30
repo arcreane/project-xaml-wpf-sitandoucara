@@ -6,15 +6,13 @@
              Title="">
 
     <VerticalStackLayout Spacing="25" HorizontalOptions="Start">
-
-        <!-- Header Title -->
+        
         <Label Text="Salut Toi!"
                FontSize="40"
                FontAttributes="Bold"
                TextColor="#000000"
                HorizontalOptions="Start" />
 
-        <!-- Main Title -->
         <VerticalStackLayout Spacing="0">
             <Label Text="Quel matière veux-tu"
                    FontSize="28"
@@ -28,7 +26,6 @@
                    HorizontalOptions="Start" />
         </VerticalStackLayout>
 
-        <!-- Subjects Grid -->
         <Grid ColumnDefinitions="*,*"
               RowDefinitions="Auto,Auto,Auto"
               Padding="10"

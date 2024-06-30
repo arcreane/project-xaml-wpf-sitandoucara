@@ -30,6 +30,7 @@
                    VerticalOptions="Start" />
             <StackLayout x:Name="AnswerButtonsContainer" Spacing="10">
             </StackLayout>
+            
             <Button Text="Accueil"
                     BackgroundColor="Transparent"
                     TextColor="Black"
